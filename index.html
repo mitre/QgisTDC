@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8"/>
+<style>
+html *
+{
+   font-family: Arial !important;
+   color: #B6B6B4 !important;
+   background-color: black !important;
+}
+a:link
+{
+    color: #B6B6FF !important;
+}
+a:hover
+{
+    background-color: #868684 !important;
+}
+ul.a {
+  list-style-type: square;
+}
+img
+{
+    vertical-align: middle; 
+}
+hr.minor
+{
+    border-top: 1px dashed #B6B6B4;
+    border-bottom: 1px dashed #B6B6B4;
+}
+div.section
+{
+    margin-left:2%;
+    margin-right:2%;
+}
+h3
+{
+    margin-left:2%;
+}
+</style>
+<head>
+<title>QTDC Plugin Help</title>
+</head>
+<body>
+
+<h1>QGIS Time Data Control (QTDC) Plugin</h1>
+<p>The Qgis Time Data Control is a component that brings to Qgis the ability to animate vector map layers that have a time attribute.  Below is an annotated illustration of the QTDC user interface that identifies each of its elements.</p>
+<hr/>
+<div><img src="help/QTDC_Main_UI.jpg" alt="Main QTDC UI" style="width:100%;"></div>
+<hr/>
+<h2>Getting Started</h2>
+<h3>Loading a layer</h3>
+<div class="section">
+<ul class="a">
+    <li>Begin by loading a vector layer that has a time attribute on the Qgis map. Time attributes can be Date/Datetime fields, numeric fields containing epoch values, or even some text time formats will work.</li>
+    <li>Center the map on the layer.</li>
+    <li>Select the name of the layer in the Qgis 'layers' pane, and click the 'Load Layer' button on the QTDC window.</li>
+</ul>
+(NOTE: If the selected layer was previously loaded in QTDC, an <a href="help/QTDC_Saved_Settings.jpg" target="_blank">option dialog</a> will be presented allowing you to use the selections that were previously made when loading the layer.  If not the <a href="help/QTDC_Load_Dialog.jpg" target="_blank">Load Layer</a> dialog will appear.)</td>
+<table  width="100%">
+<tr>
+<td><div align="center">
+    <img src="help/QTDC_Saved_Settings.jpg" alt="Saved settings dialog." height = "150"/>
+    <h3>Option Dialog</h3>
+</div></td>
+<td><div align="center"/>
+    <img src="help/QTDC_Load_Dialog.jpg" alt="Load dialog." height="250"/><br/>
+    <h3>Load Layer Dialog<h3/>
+</div></td>
+</tr>
+</table>
+<ul class="a">
+    <li>In the <a href="help/QTDC_Load_Dialog.jpg" target="_blank">Load Layer</a> dialog, select the attribute containing time values with the 'Time Attribute' combo box.</li>
+    <li>Examine the values in the "Parsed value" section of the dialog to confirm the selected attribute is correct.</li>
+    <li>Click the 'OK' button to commence loading.</li>
+</ul>
+
+When loading has completed, a histogram timeline should appear in the QTDC window representing the data of the layer.  The visible checkbox of the loaded layer will also become unchecked in the 'Layers' pane so the layer's data won't obscure animation.
+<ul class="a">
+    <li>Click the mouse on the timeline histogram to initialize the position of the Visible Data Time Window.</li>
+</ul>
+</div>
+<hr class="minor">
+<h3>Basic Animation</h3>
+<div class="section">
+Map data animation can be controlled in various ways with QTDC.  These include using the Animation Buttons and the Visible Data Time Window.
+<p><br/>
+<strong>Animation Buttons </strong>
+<img src="help/QTDC_Animation_Buttons.jpg" alt="Animation buttons." height="30"/>
+<br/>
+The Animation Button controls consist of 3 buttons on the QTDC window: Play/Pause <img src="help/QTDC_Play_Pause.jpg" alt="Play/Pause buttons." height="20"/>, Forward/Step <img src="help/QTDC_Fwd_Step.jpg" alt="Forward/Step button." height="20"/>, and Reverse/Step <img src="help/QTDC_Back_Step.jpg" alt="Back/Step button." height="20"/> 
+<ul class="a">
+    <li>Click the Play/Pause button to toggle between play and paused animation.  As animation plays, the Visible Data Time Window advances along the timeline in the direction of play.</li>
+    <li>Click the Forward/Step button to set the animation direction to forward and when animation is paused, to step forward on the timeline by the amount of time specified in the step size field. <img src="help/QTDC_Step_Size.jpg" alt="Step size." height="30"/></li>
+    <li>Click the Reverse/Step button to set the animation direction to backward and when animation is paused, to step backward on the timeline by the amount of time specified in the step size field. <img src="help/QTDC_Step_Size.jpg" alt="Step size." height="30"/></li>
+    <li>The speed of animation play can be adjusted with the 'Playback Speed" slider control:  <img src="help/QTDC_Speed_Control.jpg" alt="Speed control." height="40"/>
+</ul> 
+When animation play reaches either end of the timeline histogram, animation will automatically pause.<br/>
+</p>
+<p>
+<br/>
+<br/>
+<strong>Visible Data Time Window</strong><br/>
+The Visible Data Time Window serves as both an indicator of what portion of the timeline's data is displayed on the map, and an interactive control for selecting the time range of data to display on the map.<br/>
+The Data Time Window is a shaded region on the main timeline histogram that is bordered by red and green vertical lines.  <img src="help/QTDC_Data_Window.jpg" alt="Data window." height="80"/><br/>
+Whenever the position of the Data Window is changed on the timeline, the data corresponding to the range of time it covers on the histogram timeline is displayed on the map.<br/>
+<br/>
+The Data Window position and time range are controlled as follows:
+<ul class="a">
+    <li>Click or drag the LEFT MOUSE button on the timeline to move the Data Window position.</li>
+    <li>Drag the RIGHT MOUSE button on either the red or green line to expand or contract the Data Window time range.</li>
+    <li>The Time Window field of the QTDC window can also be used to adjust the Data Window time range. <img src="help/QTDC_Time_Field.jpg" alt="Time field." height="30"/></li>
+</ul>
+Caution should be used when adjusting the Data Window time range to avoid making it too large as this can make Qgis unresponsive when the loaded layer contains large amounts of data.<br/>
+</p>
+</div>
+<hr class="minor"><br/>
+<div class="section">
+<strong>Notice:</strong><br/>
+Portions of this software were produced for the U. S. Government under Contract No. FA8702-19-C-0001<br/>
+and W56KGU-18-D-0004, and is subject to the Rights in Noncommercial Computer Software<br/>
+and Noncommercial Computer Software Documentation Clause DFARS 252.227-7014 (FEB 2014)<br/>
+(c) 2021 The MITRE Corporation<br/>
+<a href="mailto:qtdc@mitre.org">qtdc@mitre.org</a>
+</div>
+</body>
+</html> 

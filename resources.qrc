@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="/plugins/QgisTDC">
+    <file>icons/reload24.png</file>
+    <file>icons/camera_red_24.png</file>
+    <file>icons/camera_24.png</file>
+    <file>icons/timewindow_24.png</file>
+    <file>icons/redLock24.png</file>
+    <file>icons/about20.png</file>
+    <file>icons/Clock24.png</file>
+    <file>icons/info_16.png</file>
+    <file>icons/draghand_16.png</file>
+    <file>icons/updown.png</file>
+    <file>icons/updownGreyscale.png</file>
+    <file>icons/mapzoom_16.png</file>
+    <file>icons/delete_16.png</file>
+    <file>icons/settings_16.png</file>
+    <file>icons/zoomout.png</file>
+    <file>icons/back.png</file>
+    <file>icons/forward.png</file>
+    <file>icons/pause.png</file>
+    <file>icons/play.png</file>
+    <file>icons/playback.png</file>
+    <file>icon.png</file>
+    <file>icons/absoluteTime_16x16.png</file>
+  </qresource>
+</RCC>

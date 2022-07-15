@@ -1,0 +1,46 @@
+# Mandatory items:
+
+[general]
+name=QTDC
+qgisMinimumVersion=3.0
+description=QGIS Time Data Control (QTDC):  A plugin for animating time-tagged data
+version=v20220707
+author=The MITRE Corp.
+email=qtdc@mitre.org
+
+about=
+    QTDC adds an interactive data animation capability to QGIS for vector layers having a time attribute. 
+    
+    The user can interactively control animation and specify the animation time context, 
+    specifically: when in time, how much time, and how fast to animate the time-tagged data.
+    
+    Multiple layers can be animated with QTDC simultaneously.
+    
+    The UI also provides a histogram representation of data volume over time for each loaded layer. 
+    
+    The histogram doubles as a control for adjusting where in time and how much time to display.
+    
+    Animation is bi-directional and is controlled either with UI buttons or with mouse gestures on the histogram.
+    
+    There is also a basic API that exposes a subset of QTDC operations for interaction with other plugins.
+
+tracker=http://github.com/mitre/QgisTDC/issues
+repository=http://github.com/mitre/QgisTDC
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python, interactive animation, time attribute, temporal context
+
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
