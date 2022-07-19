@@ -11,8 +11,8 @@ animation.
 
 ### Installation
 
-Install the [.zip file](build/QgisTDC.zip) in the build folder with the QGIS Plugin Manager's 
-**Install from zip** option.
+Using the QGIS Plugin Manager's **Install from zip** option, install 
+the file 'QgisTDC.zip' located in the "Releases" area of this repository.
 
 
 ### Quick Start
