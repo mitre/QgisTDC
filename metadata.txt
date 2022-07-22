@@ -26,6 +26,7 @@ about=
 
 tracker=http://github.com/mitre/QgisTDC/issues
 repository=http://github.com/mitre/QgisTDC
+homepage=http://github.com/mitre/QgisTDC
 # End of mandatory metadata
 
 # Recommended items:
